@@ -29,7 +29,6 @@
 </template>
 
 <script>
-
 import SymbolCard from "@/components/subjects/SymbolCard.vue";
 
 function rand(from, to) {
@@ -45,7 +44,7 @@ export default {
     return {
       inverted: false,
       shown: false,
-      currentTask: [ ['a', 'b'] ]
+      currentTask: []
     }
   },
   methods: {
