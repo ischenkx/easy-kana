@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar.vue";
 
 <template>
   <NavBar />
-  <div class="flex-container">
+  <div id="content-container">
     <RouterView />
   </div>
 </template>
@@ -13,13 +13,15 @@ import NavBar from "@/components/NavBar.vue";
 <style>
 @import './assets/base.css';
 
-html {
-  background-color: #212121;
-}
-
 #app {
-  flex-grow: 1;
+  background-color: #212121;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#content-container {
+  flex-grow: 1;
 }
 </style>
